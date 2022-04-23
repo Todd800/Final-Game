@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-   //private PlayerAnimation player_Animation;
+   private CharacterAnimation player_Anim;
     private Rigidbody myBody;
 
     public float walk_Speed = 2f;
@@ -17,13 +17,14 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         myBody = GetComponent<Rigidbody>();
-        //player_Animation = GetComponentInChildren<PlayerAnimation>():
+        player_Anim = GetComponentInChildren<CharacterAnimation>();
     }
 
     // Update is called once per frame
     void Update()
     {
         RotatePlayer();
+        AnimatePlayerWalk();
     }
 
     void FixedUpdate()
@@ -56,6 +57,20 @@ public class PlayerMovement : MonoBehaviour
 
     }// rotation
 
+    void AnimatePlayerWalk() 
+    {
+        if(Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) != 0 ||
+                Input.GetAxisRaw(Axis.VERTICAL_AXIS) != 0) 
+        {
+            player_Anim.Walk(true);
+        
+        } 
+        
+        else
+        {
+            player_Anim.Walk(false);
+        }
+    } //animate player walk
 
 } // class
 
