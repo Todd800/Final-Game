@@ -180,6 +180,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce916a468cbb4446cb2369b31146137c, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1 &923458674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 407148856010739255, guid: c7a8285ab55a8cd4ea0eb204f140a8d7, type: 3}
+  m_PrefabInstance: {fileID: 407148855532788888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &923458676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923458674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> parent of e7a4faf (Attack script and Enemy Made)
 --- !u!1 &1255208716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a8285ab55a8cd4ea0eb204f140a8d7, type: 3}
+<<<<<<< HEAD
 --- !u!1001 &7493597627373506093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3442,3 +3463,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of e7a4faf (Attack script and Enemy Made)

@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody myBody;
     public float speed = 5f;
 
+
     private Transform playerTarget;
 
 
@@ -37,7 +38,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Attack();
+        //Attack();
     }
 
     void FixedUpdate() 

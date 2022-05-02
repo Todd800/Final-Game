@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &923458676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407148856010739255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &407148856205525693
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +12,6 @@ GameObject:
   - component: {fileID: 407148856205525695}
   - component: {fileID: 407148856205525694}
   - component: {fileID: 4039693390070201082}
-  - component: {fileID: 6722339775651001150}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -87,20 +74,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fef5cbf1d7df6a4eabfe42ec29e80d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walk_Speed: 2
-  z_Speed: 1.5
---- !u!114 &6722339775651001150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407148856205525693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d354d7c3ae136084b8540788bbda8073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &407148856010836281
@@ -172,11 +145,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: be03966971b1d44f6b5fd7a3d3721881, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
---- !u!1 &407148856010739255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100110, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
-  m_PrefabInstance: {fileID: 407148856010836281}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &407148856010970071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400110, guid: 68ff77d4e131db34586dc6f268e92dca, type: 3}
