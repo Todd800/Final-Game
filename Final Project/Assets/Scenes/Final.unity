@@ -182,7 +182,10 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: ce916a468cbb4446cb2369b31146137c, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of e7a4faf (Attack script and Enemy Made)
 =======
 >>>>>>> parent of e7a4faf (Attack script and Enemy Made)
 --- !u!1 &923458674 stripped
@@ -1923,6 +1926,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c7a8285ab55a8cd4ea0eb204f140a8d7, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &7493597627373506093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3467,6 +3471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of e7a4faf (Attack script and Enemy Made)
 =======
 >>>>>>> parent of e7a4faf (Attack script and Enemy Made)
 =======
