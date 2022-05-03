@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform playerTarget;
 
     public float attack_Distance = 1f;
-    private float chase_Player_After_Attack = 1f;
+    public float chase_Player_After_Attack = 1f;
     
     private float current_Attack_Time;
     private float default_Attack_Time = 2f;
@@ -55,7 +55,7 @@ public class EnemyMovement : MonoBehaviour
             transform.LookAt(playerTarget);
             myBody.velocity = transform.forward * speed;
 
-            if(myBody.velocity.sqrMagnitude !=0) 
+            if(myBody.velocity.sqrMagnitude != 0) 
             {
                 enemyAnim.Walk(true);
             } 
