@@ -180,6 +180,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce916a468cbb4446cb2369b31146137c, type: 3}
+--- !u!1 &677292220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6863976559362458294, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
+  m_PrefabInstance: {fileID: 7493597627373506093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &677292221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677292220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8077d43c7bbf6604bb346bcdf0dade67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  attack_Distance: 1
+--- !u!1 &1111985863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 673423842352384076, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
+  m_PrefabInstance: {fileID: 7493597627373506093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111985865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111985863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1255208716
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 673423842342878092, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a54e888f73c451b44a9be091fcfaa3da, type: 2}
     - target: {fileID: 2135234101451066092, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -533,5 +573,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7493597627373506096, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
+    - {fileID: 7493597627373506099, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60c31418014de0645a6d69c7e1ae19a0, type: 3}

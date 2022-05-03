@@ -17,7 +17,8 @@ public class EnemyMovement : MonoBehaviour
     private float current_Attack_Time;
     private float default_Attack_Time = 2f;
 
-    private bool followPlayer, attackPlayer;
+    private bool followPlayer;
+    private bool attackPlayer;
 
     void Awake() 
     {
@@ -40,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
         Attack();
     }
 
-    void fixedUpate() 
+    void FixedUpate() 
     {
         FollowTarget();
     }
