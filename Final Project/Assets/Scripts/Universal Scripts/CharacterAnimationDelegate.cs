@@ -141,11 +141,37 @@ public class CharacterAnimationDelegate : MonoBehaviour
     void DisableMovement ()
     {
         enemy_Movement.enabled = false;
+
+        transform.parent.gameObject.layer = 0;
     }
+
+    
+
+     
+    
 
     void EnableMovement()
     {
         enemy_Movement.enabled = true;
+
+        transform.parent.gameObject.layer = 10;
     }
 
+    void ShakeCameraOnFall() 
+    {
+        //ShakeCameraOnFall().ShouldShake = true;
+    }
+
+    void CharacterDied()
+    {
+        Invoke("DeactivateGameObject", 2f);
+    }
+
+    void DeactivateGameObject() 
+    {
+         EnemyManager.instance.SpawnEnemy();
+
+         gameObject.SetActive(false);
+    }
+    
 }

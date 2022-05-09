@@ -47,7 +47,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefabs: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -98,7 +98,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefabs: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -149,7 +149,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefabs: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
@@ -200,43 +200,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   radius: 1
-  damage: 2
+  damage: 5
   is_Player: 1
   is_Enemy: 0
   hit_FX_Prefabs: {fileID: 115594, guid: efd3011863918584d94591e177fa8d29, type: 3}
---- !u!114 &765593507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407148856010739255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275cb1122c7229e44b356346216429c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  left_Arm_Attack_Point: {fileID: 295556049}
-  right_Arm_Attack_Point: {fileID: 1738897223}
-  left_Leg_Attack_Point: {fileID: 2023368303}
-  right_Leg_Attack_Point: {fileID: 444585082}
-  stand_Up_Timer: 2
-  whoosh_Sound: []
-  fall_Sound: []
-  ground_Hit_Sound: []
-  dead_Sound: []
---- !u!114 &923458676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407148856010739255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &8432379743465689547
 AudioSource:
   m_ObjectHideFlags: 0
@@ -333,6 +300,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &765593507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407148856010739255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275cb1122c7229e44b356346216429c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left_Arm_Attack_Point: {fileID: 295556049}
+  right_Arm_Attack_Point: {fileID: 1738897223}
+  left_Leg_Attack_Point: {fileID: 2023368303}
+  right_Leg_Attack_Point: {fileID: 444585082}
+  stand_Up_Timer: 2
+  whoosh_Sound: {fileID: 8300000, guid: 42281bd92bb67ee48aea76717bec1e30, type: 3}
+  fall_Sound: {fileID: 8300000, guid: c2aa5b1ca13ea884fb02d04e96075b23, type: 3}
+  ground_Hit_Sound: {fileID: 8300000, guid: 1561f7f18bbb9d347b9b3153e825c8b1, type: 3}
+  dead_Sound: {fileID: 8300000, guid: 47431eb2b37c0dd45ace8a9b7e4b344c, type: 3}
+--- !u!114 &923458676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407148856010739255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f6e0da5760c746a76e1413d80777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407148856205525693
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +347,7 @@ GameObject:
   - component: {fileID: 4039693390070201082}
   - component: {fileID: 6722339775651001150}
   - component: {fileID: 1097234543}
+  - component: {fileID: 103720664420719113}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -439,6 +440,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   is_Player: 1
+--- !u!114 &103720664420719113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407148856205525693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4731db2841f9874ba7c4fd020d83250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &407148856010836281
 PrefabInstance:
   m_ObjectHideFlags: 0

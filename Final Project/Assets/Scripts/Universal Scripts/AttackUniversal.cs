@@ -56,7 +56,12 @@ public class AttackUniversal : MonoBehaviour
                 
                
                
-           }
+           } // if it's the player^
+
+           if(is_Enemy) 
+            {
+                hit[0].GetComponent<HealthScript>().ApplyDamage(damage, false);
+            }
 
 
             gameObject.SetActive(false);
